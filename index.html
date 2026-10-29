@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evolução do Botão - Clicker Game</title>
+    <!-- Importação de fontes modernas -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1 id="game-title">O Botão Evolutivo</h1>
+            <p id="evolution-desc">Clique no botão para iniciar sua jornada de evolução!</p>
+        </header>
+
+        <div class="stats-panel">
+            <div class="stat-box">
+                <span class="stat-label">Cliques</span>
+                <span id="click-count">0</span> / <span id="max-clicks">1000</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-label">Evolução Nível</span>
+                <span id="level-count">1</span> / 20
+            </div>
+        </div>
+
+        <div class="progress-bar-container">
+            <div id="progress-bar"></div>
+        </div>
+
+        <div class="button-area" id="button-area">
+            <button id="evolution-btn">CLIQUE EM MIM!</button>
+        </div>
+
+        <div id="message-box" class="hidden"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
